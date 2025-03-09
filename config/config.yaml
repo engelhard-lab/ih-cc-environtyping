@@ -1,0 +1,44 @@
+### For Training####
+# general
+seed: 42
+workers: 6 
+dataset_dir: "/storage/yh354-projects/Pro00094410 - DeepLearning.01/r21_cebra_data/EMA data and Photos" 
+class_num: 150 # upper bound of class number
+folders: False # set to false if using every participant's folder in the dataset dir # OR provide a list of folder names to use
+demo: False # set to True if using demo data
+ps: True # set to True if including participant-specific head
+result_dir: "/storage/yh354-data/contrastive_clustering/results"
+
+
+# train options
+image_size: 224
+start_epoch: 0
+reload: False
+load_epoch: 70 ### reload training
+batch_size: 64 
+crop_size: 0.8 
+epochs: 70 
+step_size: 15 
+
+
+# model options
+resnet: "ResNet34" # ResNet18 / ResNet34 / ResNet50
+feature_dim: 128 # instance feature dimension
+state_dict_path: "/scratch/yh354/contrastive_clustering/resnet34.pth"
+model_path: "/scratch/yh354/contrastive_clustering/save/EPOCHepoch_ALPHAalpha_LAMBDAlambda_CLASSclass" # path to save model
+sparsity_alpha: [15] # alpha for stick-breaking prior＃＃＃
+stickbreaking_strength: [1]  # lambda
+
+# loss options
+learning_rate: 0.002 
+weight_decay: 0
+instance_temperature: 0.5
+cluster_temperature: 1.0
+
+
+# merge option 
+threshold: 0.72
+
+### For Inferencing###
+participant_ids: [3001, 3002, 3005, 3006, 3008] # particiapant id for inferencing result
+
