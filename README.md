@@ -1,7 +1,8 @@
 # Infinite-hierarchical-contrastive-clustering-for-personal-digital-envirotyping
 
 ![image](https://github.com/user-attachments/assets/3c490219-587c-40cc-be4b-8d638eba9751)
-This repository contains the implementation of Infinite Hierarchical Contrastive Clustering, an extension of the contrastive clustering framework originally introduced in [Contrastive Clustering by Yunfan Li](https://github.com/Yunfan-Li/Contrastive-Clustering).
+This repository contains the implementation of [Infinite Hierarchical Contrastive Clustering for Personal Digital
+Envirotyping](https://arxiv.org/pdf/2505.15022), which builds on the contrastive clustering framework originally introduced in [Contrastive Clustering by Yunfan Li](https://github.com/Yunfan-Li/Contrastive-Clustering).
 
 # Introduction
 The influence of daily environments on human health and behavior has long been recognized. Characterizing  individual daily environments,  which we call **envirotyping**, and understanding the relationships between the envirotypes and health is essential to develop environment-aware intervention strategies.   
